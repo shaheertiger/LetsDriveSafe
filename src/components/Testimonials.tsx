@@ -140,10 +140,16 @@ export default function Testimonials() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-zinc-600 ring-1 ring-zinc-200/60 shadow-sm mb-6">
+          <a
+            href={GOOGLE_REVIEW_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-zinc-600 ring-1 ring-zinc-200/60 shadow-sm mb-6 hover:shadow-md hover:ring-zinc-300 transition-all"
+          >
             <GoogleIcon className="w-4 h-4" />
             <span>Verified Google Reviews</span>
-          </div>
+            <ExternalLink className="w-3.5 h-3.5 opacity-40" />
+          </a>
           <h2
             className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl"
             style={{ fontFamily: 'var(--font-display)' }}
@@ -155,8 +161,11 @@ export default function Testimonials() {
           </p>
 
           {/* Google Rating Badge */}
-          <motion.div
-            className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-md ring-1 ring-zinc-100"
+          <motion.a
+            href={GOOGLE_REVIEW_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-md ring-1 ring-zinc-100 hover:shadow-lg hover:ring-zinc-200 transition-all cursor-pointer"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -177,7 +186,7 @@ export default function Testimonials() {
             </div>
             <div className="w-px h-8 bg-zinc-200" />
             <GoogleIcon className="w-6 h-6" />
-          </motion.div>
+          </motion.a>
         </motion.div>
 
         {/* Reviews Grid - Masonry Style */}
@@ -234,7 +243,9 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
             <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
           ))}
         </div>
-        <GoogleIcon className="w-5 h-5 opacity-30 group-hover:opacity-60 transition-opacity" />
+        <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer">
+          <GoogleIcon className="w-5 h-5 opacity-30 group-hover:opacity-60 transition-opacity" />
+        </a>
       </div>
 
       {/* Highlight badge */}

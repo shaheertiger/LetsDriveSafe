@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, CarFront, Phone } from 'lucide-react';
+import { Menu, X, CarFront, Phone, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const navigation = [
@@ -111,7 +111,7 @@ export default function Header() {
                       </a>
                     ))}
                   </div>
-                  <div className="py-6">
+                  <div className="py-6 space-y-3">
                     <a
                       href="tel:9055606900"
                       onClick={() => setMobileMenuOpen(false)}
@@ -119,6 +119,14 @@ export default function Header() {
                     >
                       <Phone className="w-5 h-5" />
                       Call Now: (905) 560-6900
+                    </a>
+                    <a
+                      href="mailto:letsdrivesafe.ca@gmail.com"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="-mx-3 flex items-center justify-center gap-2 rounded-full px-3 py-4 text-base font-bold text-zinc-900 ring-1 ring-zinc-200 text-center hover:bg-zinc-50 transition-all"
+                    >
+                      <Mail className="w-5 h-5" />
+                      Email Us
                     </a>
                   </div>
                 </div>
