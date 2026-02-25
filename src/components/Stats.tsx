@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 const stats = [
   { id: 1, name: 'First-time pass rate', value: '99%+' },
-  { id: 2, name: 'Students taught', value: '5,000+' },
+  { id: 2, name: 'Students taught', value: '5k+' },
   { id: 3, name: 'Years of experience', value: '10+' },
   { id: 4, name: '5-star reviews', value: '250+' },
 ];

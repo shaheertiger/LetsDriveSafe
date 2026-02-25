@@ -57,9 +57,9 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="tel:9055606900" className="text-sm font-bold text-white bg-zinc-900 px-6 py-2.5 rounded-full hover:bg-zinc-800 transition-all shadow-md flex items-center gap-2 hover:scale-105 active:scale-95">
+          <a href="tel:6476250730" className="text-sm font-bold text-white bg-zinc-900 px-6 py-2.5 rounded-full hover:bg-zinc-800 transition-all shadow-md flex items-center gap-2 hover:scale-105 active:scale-95">
             <Phone className="w-4 h-4" />
-            (905) 560-6900
+            (647) 625-0730
           </a>
         </div>
       </nav>
@@ -113,12 +113,12 @@ export default function Header() {
                   </div>
                   <div className="py-6 space-y-3">
                     <a
-                      href="tel:9055606900"
+                      href="tel:6476250730"
                       onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 flex items-center justify-center gap-2 rounded-full px-3 py-4 text-base font-bold text-white bg-zinc-900 text-center hover:bg-zinc-800 shadow-md transition-all"
                     >
                       <Phone className="w-5 h-5" />
-                      Call Now: (905) 560-6900
+                      Call Now: (647) 625-0730
                     </a>
                     <a
                       href="mailto:letsdrivesafe.ca@gmail.com"

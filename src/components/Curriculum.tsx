@@ -9,7 +9,7 @@ const skills = [
   },
   {
     name: 'Highway Merging',
-    description: 'Master the art of entering, navigating, and exiting high-speed expressways with complete confidence.',
+    description: 'Confidently enter, navigate, and exit high-speed expressways with complete ease.',
     icon: Route,
   },
   {
@@ -41,7 +41,7 @@ export default function Curriculum() {
         <div className="mx-auto max-w-2xl lg:text-center mb-16">
           <h2 className="text-sm font-bold text-zinc-400 uppercase tracking-widest">What You'll Learn</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
-            Master every aspect of driving
+            Learn every aspect of driving
           </p>
           <p className="mt-6 text-lg leading-8 text-zinc-400">
             Our comprehensive curriculum goes beyond the basics to ensure you're prepared for any situation you might encounter on the road.
