@@ -17,11 +17,11 @@ export default function Contact() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:9055606900"
+                  href="tel:6476250730"
                   className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-bold text-zinc-900 hover:bg-zinc-100 transition-all hover:scale-105 active:scale-95"
                 >
                   <Phone className="w-4 h-4" />
-                  Call (905) 560-6900
+                  Call (647) 625-0730
                 </a>
                 <a
                   href="mailto:letsdrivesafe.ca@gmail.com"
@@ -40,7 +40,7 @@ export default function Contact() {
                   <h3 className="font-bold text-white" style={{ fontFamily: 'var(--font-display)' }}>Phone</h3>
                   <p className="mt-2 text-sm text-zinc-400">Call or text us anytime to book a lesson.</p>
                   <p className="mt-2 font-semibold text-white">
-                    <a href="tel:9055606900" className="hover:text-zinc-300 transition-colors">(905) 560-6900</a>
+                    <a href="tel:6476250730" className="hover:text-zinc-300 transition-colors">(647) 625-0730</a>
                   </p>
                 </div>
               </div>
