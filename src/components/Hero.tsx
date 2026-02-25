@@ -25,7 +25,7 @@ export default function Hero() {
               className="text-6xl sm:text-7xl lg:text-[5.5rem] font-black tracking-tighter text-zinc-900 leading-[0.9]"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              MASTER <br/> THE ROAD.
+              LEARN HOW TO <br/> DRIVE PERFECTLY <br/> & SAFELY.
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

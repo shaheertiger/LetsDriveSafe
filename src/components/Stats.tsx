@@ -1,10 +1,10 @@
 import { motion } from 'motion/react';
 
 const stats = [
-  { id: 1, name: 'First-time pass rate', value: '98%' },
-  { id: 2, name: 'Students taught', value: '500+' },
+  { id: 1, name: 'First-time pass rate', value: '99%+' },
+  { id: 2, name: 'Students taught', value: '5,000+' },
   { id: 3, name: 'Years of experience', value: '10+' },
-  { id: 4, name: '5-star reviews', value: '150+' },
+  { id: 4, name: '5-star reviews', value: '250+' },
 ];
 
 export default function Stats() {
@@ -14,7 +14,7 @@ export default function Stats() {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl" style={{ fontFamily: 'var(--font-display)' }}>
-              Trusted by hundreds of new drivers
+              Trusted by thousands of new drivers
             </h2>
             <p className="mt-4 text-lg text-zinc-400">
               Our proven teaching methods get results. We don't just teach you to pass the test; we teach you to drive safely for life.
