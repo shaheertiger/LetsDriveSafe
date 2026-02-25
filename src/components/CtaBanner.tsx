@@ -20,7 +20,7 @@ export default function CtaBanner() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:6476250730"
+              href="tel:9055606900"
               className="rounded-full bg-white px-8 py-4 text-sm font-bold text-zinc-900 shadow-sm hover:bg-zinc-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all hover:scale-105 active:scale-95 flex items-center gap-2"
             >
               Book Your First Lesson <ArrowRight className="w-4 h-4" />

@@ -68,7 +68,7 @@ export default function Process() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <a href="tel:6476250730" className="rounded-full bg-blue-600 px-8 py-4 text-sm font-bold text-white hover:bg-blue-500 transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_25px_rgba(37,99,235,0.6)] flex items-center gap-2 hover:scale-105 active:scale-95">
+          <a href="tel:9055606900" className="rounded-full bg-blue-600 px-8 py-4 text-sm font-bold text-white hover:bg-blue-500 transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_25px_rgba(37,99,235,0.6)] flex items-center gap-2 hover:scale-105 active:scale-95">
             <PhoneCall className="w-4 h-4 animate-pulse" />
             Start Step 1 Today
           </a>

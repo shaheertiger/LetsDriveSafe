@@ -5,7 +5,7 @@ const tiers = [
   {
     name: 'Full Certification Course',
     id: 'course',
-    href: 'tel:6476250730',
+    href: 'tel:9055606900',
     price: '$725',
     priceSuffix: 'total',
     description: 'Complete MTO-approved beginner driver education program ($642 + HST).',
@@ -19,7 +19,7 @@ const tiers = [
   {
     name: 'Package 1',
     id: 'pkg-1',
-    href: 'tel:6476250730',
+    href: 'tel:9055606900',
     price: '$300',
     priceSuffix: '+ HST',
     description: 'Perfect for a quick brush-up before your test.',
@@ -32,7 +32,7 @@ const tiers = [
   {
     name: 'Package 2',
     id: 'pkg-2',
-    href: 'tel:6476250730',
+    href: 'tel:9055606900',
     price: '$400',
     priceSuffix: '+ HST',
     description: 'Great for getting comfortable with test routes.',
@@ -45,7 +45,7 @@ const tiers = [
   {
     name: 'Package 3',
     id: 'pkg-3',
-    href: 'tel:6476250730',
+    href: 'tel:9055606900',
     price: '$500',
     priceSuffix: '+ HST',
     description: 'Comprehensive training and test preparation.',
@@ -58,7 +58,7 @@ const tiers = [
   {
     name: 'Package 4',
     id: 'pkg-4',
-    href: 'tel:6476250730',
+    href: 'tel:9055606900',
     price: '$485',
     priceSuffix: '+ HST',
     description: 'Extensive in-car training without the road test car.',
@@ -70,7 +70,7 @@ const tiers = [
   {
     name: 'Test Day Package',
     id: 'test-day',
-    href: 'tel:6476250730',
+    href: 'tel:9055606900',
     price: '$150',
     priceSuffix: '+ HST',
     description: 'Car for use of Test (For Hamilton Only).',
@@ -83,7 +83,7 @@ const tiers = [
   {
     name: 'Single Lesson',
     id: 'single',
-    href: 'tel:6476250730',
+    href: 'tel:9055606900',
     price: '$55',
     priceSuffix: 'flat',
     description: 'Pay-as-you-go hourly instruction.',
