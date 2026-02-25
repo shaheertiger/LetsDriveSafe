@@ -1,23 +1,31 @@
-import { CarFront, Phone } from 'lucide-react';
+import { CarFront, Star } from 'lucide-react';
+import MTOLogo from './MTOLogo';
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-900 border-t border-white/10">
-      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center md:order-2 gap-6 items-center">
-          <a href="tel:6476250730" className="text-sm font-bold text-white bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-500 transition-all shadow-[0_0_15px_rgba(37,99,235,0.3)] flex items-center gap-2">
-            <Phone className="w-4 h-4" />
-            (647) 625-0730
+    <footer className="py-12 border-t border-zinc-100">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-center justify-center gap-6">
+        <div className="bg-zinc-900 p-2 rounded-full">
+          <CarFront className="h-5 w-5 text-white" />
+        </div>
+        
+        <MTOLogo className="text-zinc-400 scale-75 origin-center -ml-12 sm:-ml-16" />
+        
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+          <a 
+            href="https://share.google/gTbMy9s8TgyHMp3OS" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
+          >
+            <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+            Review us on Google
           </a>
         </div>
-        <div className="mt-8 md:order-1 md:mt-0 flex items-center gap-4 justify-center md:justify-start">
-          <div className="bg-blue-600 p-1.5 rounded-lg shadow-md shadow-blue-600/20">
-            <CarFront className="h-5 w-5 text-white" />
-          </div>
-          <p className="text-center text-sm/6 text-zinc-400">
-            &copy; {new Date().getFullYear()} Driving School. All rights reserved.
-          </p>
-        </div>
+
+        <p className="text-center text-sm font-medium text-zinc-500">
+          &copy; {new Date().getFullYear()} LetsDriveSafe.Ca. All rights reserved.
+        </p>
       </div>
     </footer>
   );
