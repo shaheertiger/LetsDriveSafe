@@ -127,8 +127,8 @@ export default function Testimonials() {
     <section className="py-24 sm:py-32 relative overflow-hidden" id="testimonials">
       {/* Subtle background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-40" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-50 rounded-full blur-3xl opacity-40" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-40" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl opacity-40" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
@@ -144,19 +144,19 @@ export default function Testimonials() {
             href={GOOGLE_REVIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-zinc-600 ring-1 ring-zinc-200/60 shadow-sm mb-6 hover:shadow-md hover:ring-zinc-300 transition-all"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-600 ring-1 ring-slate-200/60 shadow-sm mb-6 hover:shadow-md hover:ring-primary/30 transition-all group"
           >
             <GoogleIcon className="w-4 h-4" />
             <span>Verified Google Reviews</span>
-            <ExternalLink className="w-3.5 h-3.5 opacity-40" />
+            <ExternalLink className="w-3.5 h-3.5 opacity-40 group-hover:text-primary group-hover:opacity-100" />
           </a>
           <h2
-            className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl"
+            className="text-4xl font-black tracking-tight text-slate-900 sm:text-5xl"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             What our students say
           </h2>
-          <p className="mt-4 text-lg text-zinc-500 leading-relaxed">
+          <p className="mt-4 text-lg text-slate-500 leading-relaxed">
             Real reviews from real students who trusted us with their driving journey
           </p>
 
@@ -165,26 +165,26 @@ export default function Testimonials() {
             href={GOOGLE_REVIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-md ring-1 ring-zinc-100 hover:shadow-lg hover:ring-zinc-200 transition-all cursor-pointer"
+            className="mt-8 inline-flex items-center gap-4 rounded-2xl bg-white px-6 py-4 shadow-xl ring-1 ring-slate-100 hover:shadow-2xl hover:ring-primary/20 transition-all cursor-pointer"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="flex items-center gap-1.5">
-              <span className="text-3xl font-bold text-zinc-900" style={{ fontFamily: 'var(--font-display)' }}>
+              <span className="text-3xl font-black text-slate-900" style={{ fontFamily: 'var(--font-display)' }}>
                 5.0
               </span>
               <div className="flex flex-col items-start">
                 <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="h-4 w-4 fill-accent text-accent" />
                   ))}
                 </div>
-                <span className="text-xs text-zinc-400 font-medium">250+ reviews</span>
+                <span className="text-xs text-slate-400 font-medium">250+ reviews</span>
               </div>
             </div>
-            <div className="w-px h-8 bg-zinc-200" />
+            <div className="w-px h-8 bg-slate-200" />
             <GoogleIcon className="w-6 h-6" />
           </motion.a>
         </motion.div>
@@ -215,13 +215,14 @@ export default function Testimonials() {
             href={GOOGLE_REVIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2.5 rounded-full bg-zinc-900 px-8 py-4 text-sm font-semibold text-white shadow-lg hover:bg-zinc-800 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
+            className="group inline-flex items-center gap-2.5 rounded-full bg-slate-900 px-8 py-4 text-sm font-bold text-white shadow-lg hover:bg-slate-800 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5"
           >
             <GoogleIcon className="w-5 h-5" />
             Leave us a review on Google
             <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
           </a>
         </motion.div>
+
       </div>
     </section>
   );
@@ -230,53 +231,54 @@ export default function Testimonials() {
 function ReviewCard({ review, index }: { review: Review; index: number }) {
   return (
     <motion.div
-      className="break-inside-avoid rounded-2xl bg-white p-6 sm:p-8 ring-1 ring-zinc-200/50 shadow-sm hover:shadow-lg transition-all duration-300 group"
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.5, delay: index * 0.08 }}
+      className="break-inside-avoid rounded-2xl bg-white p-6 sm:p-8 ring-1 ring-slate-200/50 shadow-sm hover:shadow-xl transition-all duration-300 group"
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: '-20px' }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
     >
       {/* Stars & Google Icon */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex gap-0.5">
           {[...Array(review.rating)].map((_, i) => (
-            <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            <Star key={i} className="h-4 w-4 fill-accent text-accent" />
           ))}
         </div>
         <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer">
-          <GoogleIcon className="w-5 h-5 opacity-30 group-hover:opacity-60 transition-opacity" />
+          <GoogleIcon className="w-5 h-5 opacity-20 group-hover:opacity-100 transition-opacity" />
         </a>
       </div>
 
       {/* Highlight badge */}
       {review.highlight && (
-        <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-200/60 mb-4">
+        <span className="inline-flex items-center rounded-full bg-primary/5 px-3 py-1 text-xs font-bold text-primary ring-1 ring-primary/20 mb-4">
           {review.highlight}
         </span>
       )}
 
       {/* Review text */}
-      <p className="text-[15px] leading-relaxed text-zinc-600">
+      <p className="text-[15px] leading-relaxed text-slate-600">
         "{review.text}"
       </p>
 
       {/* Author */}
-      <div className="mt-6 flex items-center gap-3 pt-5 border-t border-zinc-100">
+      <div className="mt-6 flex items-center gap-3 pt-5 border-t border-slate-100">
         <div
-          className={`h-10 w-10 rounded-full bg-gradient-to-br ${getAvatarColor(review.name)} flex items-center justify-center text-white text-sm font-bold shrink-0`}
+          className={`h-10 w-10 rounded-full bg-gradient-to-br ${getAvatarColor(review.name)} flex items-center justify-center text-white text-sm font-bold shrink-0 shadow-md shadow-white/20`}
         >
           {getInitials(review.name)}
         </div>
         <div className="min-w-0">
           <p
-            className="text-sm font-semibold text-zinc-900 truncate"
+            className="text-sm font-bold text-slate-900 truncate"
             style={{ fontFamily: 'var(--font-display)' }}
           >
             {review.name}
           </p>
-          <p className="text-xs text-zinc-400">{review.date}</p>
+          <p className="text-xs text-slate-400 font-medium">{review.date}</p>
         </div>
       </div>
     </motion.div>
   );
 }
+

@@ -24,11 +24,10 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4 sm:px-6 transition-all duration-300">
-      <nav 
-        aria-label="Global" 
-        className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 w-full max-w-6xl ${
-          scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg shadow-zinc-200/50 ring-1 ring-zinc-200' : 'bg-white/50 backdrop-blur-sm shadow-sm ring-1 ring-zinc-200/50'
-        }`}
+      <nav
+        aria-label="Global"
+        className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 w-full max-w-6xl ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg shadow-zinc-200/50 ring-1 ring-zinc-200' : 'bg-white/50 backdrop-blur-sm shadow-sm ring-1 ring-zinc-200/50'
+          }`}
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2 group">
@@ -57,23 +56,24 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="tel:6476250730" className="text-sm font-bold text-white bg-zinc-900 px-6 py-2.5 rounded-full hover:bg-zinc-800 transition-all shadow-md flex items-center gap-2 hover:scale-105 active:scale-95">
+          <a href="tel:6476250730" className="text-sm font-bold text-white bg-primary px-6 py-2.5 rounded-full hover:bg-primary-dark transition-all shadow-lg shadow-primary/20 flex items-center gap-2 hover:scale-105 active:scale-95">
             <Phone className="w-4 h-4" />
             (647) 625-0730
           </a>
         </div>
+
       </nav>
       <AnimatePresence>
         {mobileMenuOpen && (
           <div className="lg:hidden">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 bg-zinc-900/20 backdrop-blur-sm" 
-              onClick={() => setMobileMenuOpen(false)} 
+              className="fixed inset-0 z-50 bg-zinc-900/20 backdrop-blur-sm"
+              onClick={() => setMobileMenuOpen(false)}
             />
-            <motion.div 
+            <motion.div
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}

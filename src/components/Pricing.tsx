@@ -100,11 +100,11 @@ function classNames(...classes: string[]) {
 
 export default function Pricing() {
   return (
-    <div className="py-24 sm:py-32 bg-zinc-50" id="pricing">
+    <div className="py-24 sm:py-32 bg-slate-50" id="pricing">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-sm font-bold text-zinc-500 uppercase tracking-widest">Pricing</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
+          <h2 className="text-sm font-bold text-primary uppercase tracking-widest">Pricing</h2>
+          <p className="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
             Simple, transparent pricing
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function Pricing() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: tierIdx * 0.05 }}
               className={classNames(
-                tier.mostPopular ? 'ring-2 ring-zinc-900 shadow-2xl z-10 bg-zinc-900 text-white lg:col-span-2 xl:col-span-2' : 'ring-1 ring-zinc-200 shadow-sm bg-white text-zinc-900',
+                tier.mostPopular ? 'ring-2 ring-primary shadow-2xl z-10 bg-primary text-white lg:col-span-2 xl:col-span-2' : 'ring-1 ring-slate-200 shadow-sm bg-white text-slate-900',
                 'rounded-[2.5rem] p-8 xl:p-10 relative flex flex-col justify-between transition-all duration-300 hover:shadow-lg'
               )}
             >
@@ -132,21 +132,21 @@ export default function Pricing() {
                     {tier.name}
                   </h3>
                   {tier.mostPopular ? (
-                    <p className="rounded-full bg-white px-3 py-1 text-xs font-bold text-zinc-900 shadow-sm">
+                    <p className="rounded-full bg-white px-3 py-1 text-xs font-bold text-primary shadow-sm">
                       Best Value
                     </p>
                   ) : null}
                 </div>
-                <p className={classNames(tier.mostPopular ? "text-zinc-300" : "text-zinc-500", "mt-4 text-sm leading-relaxed")}>{tier.description}</p>
-                <p className="mt-6 flex items-baseline gap-x-1">
-                  <span className="text-5xl font-bold tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>{tier.price}</span>
-                  <span className={classNames(tier.mostPopular ? "text-zinc-400" : "text-zinc-500", "text-sm font-semibold")}>{tier.priceSuffix}</span>
-                </p>
+                <p className={classNames(tier.mostPopular ? "text-blue-100" : "text-slate-500", "mt-4 text-sm leading-relaxed")}>{tier.description}</p>
+                <div className="mt-6 flex items-baseline gap-x-1">
+                  <span className="text-5xl font-black tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>{tier.price}</span>
+                  <span className={classNames(tier.mostPopular ? "text-blue-100" : "text-slate-500", "text-sm font-semibold")}>{tier.priceSuffix}</span>
+                </div>
                 <ul role="list" className="mt-8 space-y-3 text-sm">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex gap-x-3 items-start">
-                      <Check aria-hidden="true" className={classNames(tier.mostPopular ? "text-white" : "text-zinc-900", "h-5 w-5 flex-none mt-0.5")} />
-                      <span className={classNames(tier.mostPopular ? "text-zinc-300" : "text-zinc-600")}>{feature}</span>
+                      <Check aria-hidden="true" className={classNames(tier.mostPopular ? "text-white" : "text-primary", "h-5 w-5 flex-none mt-0.5")} />
+                      <span className={classNames(tier.mostPopular ? "text-white" : "text-slate-600")}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -156,9 +156,9 @@ export default function Pricing() {
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                    ? 'bg-white text-zinc-900 hover:bg-zinc-100'
-                    : 'text-zinc-900 ring-1 ring-inset ring-zinc-200 hover:bg-zinc-50',
-                  'mt-8 flex items-center justify-center gap-2 rounded-full px-4 py-4 text-center text-sm font-bold transition-all hover:scale-105 active:scale-95'
+                    ? 'bg-white text-primary hover:bg-slate-50'
+                    : 'bg-slate-900 text-white hover:bg-slate-800',
+                  'mt-8 flex items-center justify-center gap-2 rounded-full px-4 py-4 text-center text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg'
                 )}
               >
                 <Phone className="w-4 h-4" />
@@ -167,23 +167,24 @@ export default function Pricing() {
             </motion.div>
           ))}
         </div>
-        
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-12 rounded-2xl bg-blue-50 p-6 ring-1 ring-inset ring-blue-200 flex items-start gap-4 max-w-3xl mx-auto"
+          className="mt-12 rounded-2xl bg-primary/5 p-6 ring-1 ring-inset ring-primary/20 flex items-start gap-4 max-w-3xl mx-auto"
         >
-          <Info className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+          <Info className="w-6 h-6 text-primary shrink-0 mt-0.5" />
           <div>
-            <h4 className="font-bold text-blue-900">Important Pricing Information</h4>
-            <p className="mt-1 text-sm text-blue-800 leading-relaxed">
-              All above prices are for <strong>Hamilton only</strong>. To know about pricing for other cities, please <a href="#contact" className="underline font-semibold hover:text-blue-600">contact us</a> or email us at <a href="mailto:info@letsdrivesafe.ca" className="underline font-semibold hover:text-blue-600">info@letsdrivesafe.ca</a>.
+            <h4 className="font-bold text-slate-900">Important Pricing Information</h4>
+            <p className="mt-1 text-sm text-slate-600 leading-relaxed">
+              All above prices are for <strong>Hamilton only</strong>. To know about pricing for other cities, please <a href="#contact" className="underline font-semibold text-primary hover:text-primary-dark">contact us</a> or email us at <a href="mailto:info@letsdrivesafe.ca" className="underline font-semibold text-primary hover:text-primary-dark">info@letsdrivesafe.ca</a>.
             </p>
           </div>
         </motion.div>
       </div>
     </div>
+
   );
 }

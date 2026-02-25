@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col selection:bg-zinc-900 selection:text-white">
+    <div className="min-h-screen flex flex-col selection:bg-primary/30 selection:text-primary">
       <Header />
       <main className="flex-grow">
         <Hero />
