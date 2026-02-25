@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Star, Mail } from 'lucide-react';
 import MTOLogo from './MTOLogo';
 
 export default function Hero() {
@@ -41,10 +41,14 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-10 flex flex-wrap items-center gap-4"
             >
-              <a href="tel:6476250730" className="rounded-full bg-zinc-900 px-8 py-4 text-sm font-bold text-white hover:bg-zinc-800 transition-all flex items-center gap-2 hover:scale-105 shadow-xl shadow-zinc-900/20">
+              <a href="tel:9055606900" className="rounded-full bg-zinc-900 px-8 py-4 text-sm font-bold text-white hover:bg-zinc-800 transition-all flex items-center gap-2 hover:scale-105 shadow-xl shadow-zinc-900/20">
                 Book a Lesson
               </a>
-              <a href="#pricing" className="rounded-full bg-white px-8 py-4 text-sm font-bold text-zinc-900 ring-1 ring-inset ring-zinc-200 hover:bg-zinc-50 transition-all flex items-center gap-2 group">
+              <a href="mailto:letsdrivesafe.ca@gmail.com" className="rounded-full bg-white px-8 py-4 text-sm font-bold text-zinc-900 ring-1 ring-inset ring-zinc-200 hover:bg-zinc-50 transition-all flex items-center gap-2 group">
+                <Mail className="w-4 h-4" />
+                Email Us
+              </a>
+              <a href="#pricing" className="text-sm font-bold text-zinc-600 hover:text-zinc-900 transition-colors flex items-center gap-1 group">
                 View Pricing <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </motion.div>

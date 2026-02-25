@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { PhoneCall, Car, Award } from 'lucide-react';
+import { PhoneCall, Car, Award, Mail } from 'lucide-react';
 
 const steps = [
   {
@@ -61,16 +61,20 @@ export default function Process() {
           </div>
         </div>
         
-        <motion.div 
-          className="mt-20 flex justify-center"
+        <motion.div
+          className="mt-20 flex flex-col sm:flex-row items-center justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <a href="tel:6476250730" className="rounded-full bg-blue-600 px-8 py-4 text-sm font-bold text-white hover:bg-blue-500 transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_25px_rgba(37,99,235,0.6)] flex items-center gap-2 hover:scale-105 active:scale-95">
+          <a href="tel:9055606900" className="rounded-full bg-blue-600 px-8 py-4 text-sm font-bold text-white hover:bg-blue-500 transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_25px_rgba(37,99,235,0.6)] flex items-center gap-2 hover:scale-105 active:scale-95">
             <PhoneCall className="w-4 h-4 animate-pulse" />
             Start Step 1 Today
+          </a>
+          <a href="mailto:letsdrivesafe.ca@gmail.com" className="rounded-full bg-white px-8 py-4 text-sm font-bold text-zinc-900 ring-1 ring-zinc-200 hover:bg-zinc-50 transition-all flex items-center gap-2 hover:scale-105 active:scale-95">
+            <Mail className="w-4 h-4" />
+            Email Us
           </a>
         </motion.div>
       </div>
