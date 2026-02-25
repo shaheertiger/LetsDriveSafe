@@ -1,4 +1,4 @@
-import { CarFront, Star } from 'lucide-react';
+import { CarFront, Star, Mail } from 'lucide-react';
 import MTOLogo from './MTOLogo';
 
 export default function Footer() {
@@ -12,14 +12,22 @@ export default function Footer() {
         <MTOLogo className="text-zinc-400 scale-75 origin-center -ml-12 sm:-ml-16" />
         
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
-          <a 
-            href="https://share.google/gTbMy9s8TgyHMp3OS" 
-            target="_blank" 
+          <a
+            href="https://maps.app.goo.gl/zJyVd1NufV7R8Rka8"
+            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
           >
             <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
             Review us on Google
+          </a>
+          <span className="hidden sm:block text-zinc-300">|</span>
+          <a
+            href="mailto:letsdrivesafe.ca@gmail.com"
+            className="flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
+          >
+            <Mail className="w-4 h-4" />
+            letsdrivesafe.ca@gmail.com
           </a>
         </div>
 
