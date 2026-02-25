@@ -26,7 +26,7 @@ export default function CtaBanner() {
               Book Your First Lesson <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="mailto:letsdrivesafe.ca@gmail.com"
+              href="mailto:info@letsdrivesafe.ca"
               className="rounded-full bg-transparent px-8 py-4 text-sm font-bold text-white ring-1 ring-white/30 hover:bg-white/10 transition-all hover:scale-105 active:scale-95 flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
