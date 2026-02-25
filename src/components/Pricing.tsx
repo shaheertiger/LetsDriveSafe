@@ -179,7 +179,7 @@ export default function Pricing() {
           <div>
             <h4 className="font-bold text-blue-900">Important Pricing Information</h4>
             <p className="mt-1 text-sm text-blue-800 leading-relaxed">
-              All above prices are for <strong>Hamilton only</strong>. To know about pricing for other cities, please <a href="#contact" className="underline font-semibold hover:text-blue-600">contact us</a> or email us at <a href="mailto:letsdrivesafe.ca@gmail.com" className="underline font-semibold hover:text-blue-600">letsdrivesafe.ca@gmail.com</a>.
+              All above prices are for <strong>Hamilton only</strong>. To know about pricing for other cities, please <a href="#contact" className="underline font-semibold hover:text-blue-600">contact us</a> or email us at <a href="mailto:info@letsdrivesafe.ca" className="underline font-semibold hover:text-blue-600">info@letsdrivesafe.ca</a>.
             </p>
           </div>
         </motion.div>

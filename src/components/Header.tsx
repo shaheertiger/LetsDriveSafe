@@ -121,7 +121,7 @@ export default function Header() {
                       Call Now: (647) 625-0730
                     </a>
                     <a
-                      href="mailto:letsdrivesafe.ca@gmail.com"
+                      href="mailto:info@letsdrivesafe.ca"
                       onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 flex items-center justify-center gap-2 rounded-full px-3 py-4 text-base font-bold text-zinc-900 ring-1 ring-zinc-200 text-center hover:bg-zinc-50 transition-all"
                     >

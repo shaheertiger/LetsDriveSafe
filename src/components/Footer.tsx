@@ -23,11 +23,11 @@ export default function Footer() {
           </a>
           <span className="hidden sm:block text-zinc-300">|</span>
           <a
-            href="mailto:letsdrivesafe.ca@gmail.com"
+            href="mailto:info@letsdrivesafe.ca"
             className="flex items-center gap-2 text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
           >
             <Mail className="w-4 h-4" />
-            letsdrivesafe.ca@gmail.com
+            info@letsdrivesafe.ca
           </a>
         </div>
 

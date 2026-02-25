@@ -24,7 +24,7 @@ export default function Contact() {
                   Call (647) 625-0730
                 </a>
                 <a
-                  href="mailto:letsdrivesafe.ca@gmail.com"
+                  href="mailto:info@letsdrivesafe.ca"
                   className="inline-flex items-center gap-2 rounded-full bg-transparent px-8 py-4 text-sm font-bold text-white ring-1 ring-white/30 hover:bg-white/10 transition-all hover:scale-105 active:scale-95"
                 >
                   <Mail className="w-4 h-4" />
@@ -50,7 +50,7 @@ export default function Contact() {
                   <h3 className="font-bold text-white" style={{ fontFamily: 'var(--font-display)' }}>Email</h3>
                   <p className="mt-2 text-sm text-zinc-400">Send us an email for general inquiries.</p>
                   <p className="mt-2 font-semibold text-white">
-                    <a href="mailto:letsdrivesafe.ca@gmail.com" className="hover:text-zinc-300 transition-colors">letsdrivesafe.ca@gmail.com</a>
+                    <a href="mailto:info@letsdrivesafe.ca" className="hover:text-zinc-300 transition-colors">info@letsdrivesafe.ca</a>
                   </p>
                 </div>
               </div>

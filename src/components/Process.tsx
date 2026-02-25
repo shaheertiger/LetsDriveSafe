@@ -72,7 +72,7 @@ export default function Process() {
             <PhoneCall className="w-4 h-4 animate-pulse" />
             Start Step 1 Today
           </a>
-          <a href="mailto:letsdrivesafe.ca@gmail.com" className="rounded-full bg-white px-8 py-4 text-sm font-bold text-zinc-900 ring-1 ring-zinc-200 hover:bg-zinc-50 transition-all flex items-center gap-2 hover:scale-105 active:scale-95">
+          <a href="mailto:info@letsdrivesafe.ca" className="rounded-full bg-white px-8 py-4 text-sm font-bold text-zinc-900 ring-1 ring-zinc-200 hover:bg-zinc-50 transition-all flex items-center gap-2 hover:scale-105 active:scale-95">
             <Mail className="w-4 h-4" />
             Email Us
           </a>
