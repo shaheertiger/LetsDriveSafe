@@ -1,0 +1,6 @@
+# LetsDriveSafe.Ca - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://letsdrivesafe.ca/sitemap.xml

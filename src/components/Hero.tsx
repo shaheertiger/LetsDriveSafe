@@ -4,7 +4,7 @@ import MTOLogo from './MTOLogo';
 
 export default function Hero() {
   return (
-    <div className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
+    <section aria-label="Hero" className="relative pt-32 pb-20 sm:pt-40 sm:pb-24 overflow-hidden">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-blue-100/50 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 -left-1/4 w-1/2 h-1/2 bg-indigo-100/30 rounded-full blur-3xl"></div>
@@ -65,9 +65,9 @@ export default function Hero() {
             >
               <div className="flex items-center gap-4 shrink-0">
                 <div className="flex -space-x-3 shrink-0">
-                  <img className="inline-block h-14 w-14 rounded-full ring-4 ring-white object-cover shrink-0" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" referrerPolicy="no-referrer" />
-                  <img className="inline-block h-14 w-14 rounded-full ring-4 ring-white object-cover shrink-0" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" referrerPolicy="no-referrer" />
-                  <img className="inline-block h-14 w-14 rounded-full ring-4 ring-white object-cover shrink-0" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" referrerPolicy="no-referrer" />
+                  <img className="inline-block h-14 w-14 rounded-full ring-4 ring-white object-cover shrink-0" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Satisfied student" referrerPolicy="no-referrer" />
+                  <img className="inline-block h-14 w-14 rounded-full ring-4 ring-white object-cover shrink-0" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Satisfied student" referrerPolicy="no-referrer" />
+                  <img className="inline-block h-14 w-14 rounded-full ring-4 ring-white object-cover shrink-0" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Satisfied student" referrerPolicy="no-referrer" />
                 </div>
                 <div className="flex flex-col justify-center shrink-0">
                   <div className="flex items-center gap-1.5 text-slate-900">
@@ -110,6 +110,6 @@ export default function Hero() {
         </div>
       </div>
 
-    </div>
+    </section>
   );
 }

@@ -3,7 +3,7 @@ import { CheckCircle2 } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="py-24 sm:py-32 overflow-hidden" id="about">
+    <section className="py-24 sm:py-32 overflow-hidden" id="about">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div
@@ -12,10 +12,10 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-2">About Us</h2>
-            <h3 className="text-4xl sm:text-5xl font-black tracking-tight text-slate-900 mb-6" style={{ fontFamily: 'var(--font-display)' }}>
+            <p className="text-sm font-bold text-primary uppercase tracking-widest mb-2">About Us</p>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-slate-900 mb-6" style={{ fontFamily: 'var(--font-display)' }}>
               More than just passing a test. We build safe drivers for life.
-            </h3>
+            </h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-8">
               At <span className="text-primary font-bold">LetsDriveSafe.Ca</span>, we believe that driving is a privilege that requires responsibility, skill, and confidence. Founded with a mission to reduce road accidents through superior education, we've helped hundreds of students in the Hamilton area become licensed, defensive drivers.
             </p>
@@ -43,6 +43,6 @@ export default function About() {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

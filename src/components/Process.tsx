@@ -21,13 +21,13 @@ const steps = [
 
 export default function Process() {
   return (
-    <div className="py-24 sm:py-32 bg-white" id="process">
+    <section className="py-24 sm:py-32 bg-white" id="process">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center mb-16">
-          <h2 className="text-sm font-bold text-zinc-500 uppercase tracking-widest">How It Works</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
+          <p className="text-sm font-bold text-zinc-500 uppercase tracking-widest">How It Works</p>
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
             Your journey to getting licensed
-          </p>
+          </h2>
           <p className="mt-6 text-lg leading-8 text-zinc-600">
             We've streamlined the process to make learning to drive as easy and stress-free as possible.
           </p>
@@ -78,6 +78,6 @@ export default function Process() {
           </a>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

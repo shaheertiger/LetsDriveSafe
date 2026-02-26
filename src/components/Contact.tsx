@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <div className="py-24 sm:py-32" id="contact">
+    <section className="py-24 sm:py-32" id="contact">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="bg-slate-900 rounded-[3rem] px-6 py-16 sm:p-20 relative overflow-hidden shadow-2xl">
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:24px_24px] opacity-20"></div>
@@ -61,7 +61,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
   );
 }

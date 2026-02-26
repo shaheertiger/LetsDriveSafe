@@ -9,7 +9,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="bg-slate-900 py-16 sm:py-24 relative overflow-hidden">
+    <section aria-label="Statistics" className="bg-slate-900 py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary"></div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <div className="mx-auto max-w-2xl lg:max-w-none">
@@ -40,7 +40,7 @@ export default function Stats() {
           </dl>
         </div>
       </div>
-    </div>
+    </section>
 
   );
 }

@@ -100,13 +100,13 @@ function classNames(...classes: string[]) {
 
 export default function Pricing() {
   return (
-    <div className="py-24 sm:py-32 bg-slate-50" id="pricing">
+    <section className="py-24 sm:py-32 bg-slate-50" id="pricing">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-sm font-bold text-primary uppercase tracking-widest">Pricing</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
+          <p className="text-sm font-bold text-primary uppercase tracking-widest">Pricing</p>
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
             Simple, transparent pricing
-          </p>
+          </h2>
         </div>
 
         <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4 items-stretch">
@@ -184,7 +184,7 @@ export default function Pricing() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
 
   );
 }

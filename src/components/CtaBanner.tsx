@@ -3,7 +3,7 @@ import { ArrowRight, Mail } from 'lucide-react';
 
 export default function CtaBanner() {
   return (
-    <div className="py-16 sm:py-24">
+    <section aria-label="Call to action" className="py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -38,7 +38,7 @@ export default function CtaBanner() {
           <div className="absolute -bottom-24 -right-20 w-80 h-80 bg-secondary/30 rounded-full blur-3xl pointer-events-none"></div>
         </motion.div>
       </div>
-    </div>
+    </section>
 
   );
 }
