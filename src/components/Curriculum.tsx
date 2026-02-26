@@ -36,14 +36,14 @@ const skills = [
 
 export default function Curriculum() {
   return (
-    <div className="py-24 sm:py-32 bg-[#020617] text-white relative overflow-hidden" id="curriculum">
+    <section className="py-24 sm:py-32 bg-[#020617] text-white relative overflow-hidden" id="curriculum">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <div className="mx-auto max-w-2xl lg:text-center mb-16">
-          <h2 className="text-sm font-bold text-primary uppercase tracking-widest">What You'll Learn</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
+          <p className="text-sm font-bold text-primary uppercase tracking-widest">What You'll Learn</p>
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
             Learn every aspect of driving
-          </p>
+          </h2>
           <p className="mt-6 text-lg leading-8 text-slate-400">
             Our comprehensive curriculum goes beyond the basics to ensure you're prepared for any situation you might encounter on the road.
           </p>
@@ -74,7 +74,7 @@ export default function Curriculum() {
           </dl>
         </div>
       </div>
-    </div>
+    </section>
 
   );
 }

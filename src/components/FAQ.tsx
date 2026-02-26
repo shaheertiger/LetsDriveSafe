@@ -29,13 +29,13 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="py-24 sm:py-32 bg-[#F4F4F0]" id="faq">
+    <section className="py-24 sm:py-32 bg-[#F4F4F0]" id="faq">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-sm font-bold text-zinc-500 uppercase tracking-widest">FAQ</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
+          <p className="text-sm font-bold text-zinc-500 uppercase tracking-widest">FAQ</p>
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
             Common questions
-          </p>
+          </h2>
         </div>
         
         <div className="mx-auto max-w-3xl">
@@ -77,6 +77,6 @@ export default function FAQ() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -34,13 +34,13 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="py-24 sm:py-32" id="features">
+    <section className="py-24 sm:py-32" id="features">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center mb-16">
-          <h2 className="text-sm font-bold text-zinc-500 uppercase tracking-widest">Learn with Confidence</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
+          <p className="text-sm font-bold text-zinc-500 uppercase tracking-widest">Learn with Confidence</p>
+          <h2 className="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl" style={{ fontFamily: 'var(--font-display)' }}>
             Everything you need to become a safe driver
-          </p>
+          </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {features.map((feature, index) => (
@@ -65,6 +65,6 @@ export default function Features() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
