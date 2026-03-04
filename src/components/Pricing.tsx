@@ -6,7 +6,7 @@ const tiers = [
     name: 'Full Certification Course',
     id: 'course',
     href: 'tel:6476250730',
-    price: '$619 ',
+    price: '$619',
     priceSuffix: 'total',
     description: 'Complete MTO-approved beginner driver education program ($619+ HST).',
     features: [
