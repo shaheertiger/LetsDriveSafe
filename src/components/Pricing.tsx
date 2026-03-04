@@ -8,7 +8,7 @@ const tiers = [
     href: 'tel:6476250730',
     price: '$725',
     priceSuffix: 'total',
-    description: 'Complete MTO-approved beginner driver education program ($642 + HST).',
+    description: 'Complete MTO-approved beginner driver education program ($619 + HST).',
     features: [
       '30 hours online learning',
       '10 hours in-car training',
@@ -84,7 +84,7 @@ const tiers = [
     name: 'Single Lesson',
     id: 'single',
     href: 'tel:6476250730',
-    price: '$55',
+    price: '$49 plus tax',
     priceSuffix: 'flat',
     description: 'Pay-as-you-go hourly instruction.',
     features: [
